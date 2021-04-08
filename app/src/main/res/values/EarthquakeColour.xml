@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Mag9.5">#fa0000</color>
+    <color name="Mag9.0">#fa2600</color>
+    <color name="Mag8.5">#fa3e00</color>
+    <color name="Mag8.0">#fa5300</color>
+    <color name="Mag7.5">#fa6000</color>
+    <color name="Mag7.0">#fa7900</color>
+    <color name="Mag6.5">#fa8a00</color>
+    <color name="Mag6.0">#fa9a00</color>
+    <color name="Mag5.5">#faab00</color>
+    <color name="Mag5.0">#facc00</color>
+    <color name="Mag4.5">#fae500</color>
+    <color name="Mag4.0">#f2fa00</color>
+    <color name="Mag3.5">#d9fa00</color>
+    <color name="Mag3.0">#c4fa00</color>
+    <color name="Mag2.5">#affa00</color>
+    <color name="Mag2.0">#96fa00</color>
+    <color name="Mag1.5">#81fa00</color>
+    <color name="Mag1.0">#75fa00</color>
+    <color name="Mag0.5">#58fa00</color>
+    <color name="Mag0.0">#36fa00</color>
+</resources>

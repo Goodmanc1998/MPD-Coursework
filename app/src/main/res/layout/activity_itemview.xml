@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Name : Connor Goodman
+    ID : S1625004
+-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    android:id="@+id/itemView">
+
+    <!--Title, Category, Date -->
+    <RelativeLayout
+        android:id="@+id/locationDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/customborder">
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical"
+            android:text="Location"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:padding="2dp"/>
+
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_below="@+id/title"
+            android:gravity="center_vertical"
+            android:text="Category"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:padding="2dp"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/category"
+            android:text="Date"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:padding="2dp"/>
+    </RelativeLayout>
+    <!--EQ Size, Mag, Depth -->
+
+    <RelativeLayout
+        android:id="@+id/eqSize"
+        android:layout_width="wrap_content"
+        android:layout_height="150dip"
+        android:layout_above="@+id/eqLocation"
+        android:background="@drawable/customborder">
+
+        <TextView
+            android:id="@+id/size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Earthquake Size"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:padding="2dp"/>
+
+        <TextView
+            android:id="@+id/magnatude"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:text="Magnatude"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:padding="2dp"/>
+
+        <TextView
+            android:id="@+id/depth"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/magnatude"
+            android:text="Depth"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:padding="2dp"/>
+
+
+    </RelativeLayout>
+
+    <!--EQ Position, Lat, Long -->
+
+    <RelativeLayout
+        android:id="@+id/eqLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="150dip"
+        android:layout_above="@+id/otherViews"
+        android:background="@drawable/customborder">
+
+        <TextView
+            android:id="@+id/position"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="Earthquake Position"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:padding="2dp"/>
+
+        <TextView
+            android:id="@+id/geoLat"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:text="GeoLat"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:padding="2dp"/>
+
+        <TextView
+            android:id="@+id/geoLong"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/geoLat"
+            android:text="GeoLong"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:padding="2dp"/>
+
+
+    </RelativeLayout>
+
+    <!--MapButton text boxes -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/plagerismReq"
+        android:id="@id/otherViews"
+        android:background="@drawable/customborder">
+
+        <TextView
+            android:id="@+id/otherViews"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="Other Views"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:padding="2dp"/>
+
+        <Button
+            android:id="@+id/mapButton"
+            android:layout_width="175dp"
+            android:layout_height="100dp"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/otherViews"
+            android:text="Map View"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:padding="2dp"/>
+
+        <!--Link text boxes -->
+        <Button
+            android:id="@+id/link"
+            android:layout_width="175dp"
+            android:layout_height="100dp"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/otherViews"
+            android:text="Web View"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:padding="2dp"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:id="@+id/plagerismReq"
+        android:layout_alignParentBottom="true">
+
+        <TextView android:id="@+id/studentId"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/acknowledgement"
+            android:textSize="15sp"
+            android:text="@string/student_ID"
+            android:gravity="center"/>
+
+
+        <TextView android:id="@+id/acknowledgement"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textSize="15sp"
+            android:text="@string/acknowledgement"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,3 +1,13 @@
+<!--
+    Name : Connor Goodman
+    ID : S1625004
+-->
 <resources>
     <string name="app_name">MPD-Coursework</string>
+    <string name="acknowledgement">Contains British Geological Survey materials ©NERC 2019</string>
+    <string name="student_ID">ID:S1625004</string>
+    <string name="dateView">Date Search</string>
+    <string name="listView">List View</string>
+    <string name="daySearch">Single Day Search</string>
+    <string name="rangeSearch">Date Range Search</string>
 </resources>

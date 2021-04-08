@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Name : Connor Goodman
+    ID : S1625004
+-->
+<ViewSwitcher
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/vwSwitcher">
+    <!--
+    This is a comment
+    on multiple lines
+-->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dateView"/>
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnSearch"
+            android:layout_above="@+id/plagerismReq"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:id="@+id/plagerismReq"
+            android:layout_alignParentBottom="true">
+
+            <TextView android:id="@+id/studentId"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/acknowledgement"
+                android:textSize="15sp"
+                android:text="@string/student_ID"
+                android:gravity="center"/>
+
+
+            <TextView android:id="@+id/acknowledgement"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:textSize="15sp"
+                android:text="@string/acknowledgement"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <Button
+            android:id="@+id/btnListView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/listView"/>
+
+
+        <Button
+            android:id="@+id/dateButton"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/daySearch"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:padding="20dp"/>
+
+        <Button
+            android:id="@+id/btnDateRange"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/dateButton"
+            android:layout_alignParentRight="true"
+            android:text="@string/rangeSearch"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:padding="20dp"/>
+
+        <TextView
+            android:id="@+id/txtDateRange"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnListView"
+            android:layout_toLeftOf="@+id/dateButton"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:text=""/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDateRange"
+            android:layout_above="@+id/plagerismReqP2"
+            android:layout_toLeftOf="@id/dateButton">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Largest Mag -->
+                <TextView
+                    android:id="@+id/txtMagLarge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtDateRange"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:text="Largest Magnitude"/>
+
+                <FrameLayout
+                    android:id="@+id/fragMagLarge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtMagLarge" />
+
+                <!-- Largest Depth -->
+                <TextView
+                    android:id="@+id/txtDepthLarge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fragMagLarge"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:text="Largest Depth"/>
+
+                <FrameLayout
+                    android:id="@+id/fragDepthLarth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtDepthLarge" />
+
+                <!-- Smallest Depth -->
+                <TextView
+                    android:id="@+id/txtDepthSmall"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fragDepthLarth"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:text="Smallest Depth"/>
+
+                <FrameLayout
+                    android:id="@+id/fragDepthSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtDepthSmall" />
+
+                <!-- North -->
+                <TextView
+                    android:id="@+id/txtNorth"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fragDepthSmall"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:text="Most Northern"/>
+
+                <FrameLayout
+                    android:id="@+id/fragNorth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtNorth" />
+
+                <!-- East -->
+                <TextView
+                    android:id="@+id/txtEast"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fragNorth"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:text="Most Eastern"/>
+
+                <FrameLayout
+                    android:id="@+id/fragEast"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtEast" />
+
+                <!-- South -->
+                <TextView
+                    android:id="@+id/txtSouth"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtEast"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:text="Most Southern"/>
+
+                <FrameLayout
+                    android:id="@+id/fragSouth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtSouth" />
+
+                <!-- West -->
+                <TextView
+                    android:id="@+id/txtWest"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fragSouth"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:text="Most Western"/>
+
+                <FrameLayout
+                    android:id="@+id/fragWest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtWest" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:id="@+id/plagerismReqP2"
+            android:layout_alignParentBottom="true">
+
+            <TextView android:id="@+id/studentIdP2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/acknowledgementP2"
+                android:textSize="15sp"
+                android:text="@string/student_ID"
+                android:gravity="center"/>
+
+
+            <TextView android:id="@+id/acknowledgementP2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:textSize="15sp"
+                android:text="@string/acknowledgement"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</ViewSwitcher>
