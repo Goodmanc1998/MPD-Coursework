@@ -416,14 +416,12 @@ public class MainActivity extends AppCompatActivity implements OnClickListener
                 yc = aurl.openConnection();
                 in = new BufferedReader(new InputStreamReader(yc.getInputStream()));
                 Log.e("Run","after ready");
-                //
-                // Throw away the first 2 header lines before parsing
+
                 boolean item = false;
 
                 while ((inputLine = in.readLine()) != null)
                 {
                     result += inputLine;
-                    //Log.e("MyTag",inputLine);
                 }
                 in.close();
 
@@ -467,7 +465,6 @@ public class MainActivity extends AppCompatActivity implements OnClickListener
                         if(dataStart)
                         {
                             //Checking for each tag name
-
                             if(tagName.equalsIgnoreCase("title"))
                             {
                                 //Storing the string within the Tags
@@ -485,7 +482,6 @@ public class MainActivity extends AppCompatActivity implements OnClickListener
                                 //For Each of these strings
                                 for(int i = 0; i < strings.length; i++)
                                 {
-                                    //Log.e("MyTag","Description :" + strings[i]);
 
                                     //If the string is required string
                                     if(strings[i].equals(" Location"))
@@ -553,7 +549,6 @@ public class MainActivity extends AppCompatActivity implements OnClickListener
                         {
                             //Storing the widget within list
                             newList.add(widget);
-                            //adapter.add(widget);
                             publishProgress(widget);
                             dataStart = false;
                         }
